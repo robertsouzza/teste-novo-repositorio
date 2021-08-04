@@ -1,11 +1,16 @@
 package application;
 
+import java.util.Date;
+
+import entities.Order;
+import entities.enums.OrderStatus;
+
 public class Program {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Boa Noite");
-		System.out.println("Bom dia!");	
-		System.out.println("Boa tarde!");
+         Order order = new Order(1080, new Date(),OrderStatus.PENDING_PAYMENT);
+         
+         System.out.println(order);
 	}
 }
